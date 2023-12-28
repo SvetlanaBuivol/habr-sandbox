@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/habr-sandbo/",
+    "build": "vite build --base=/habr-sandbox/",
     "preview": "vite preview"
   },
   "devDependencies": {
