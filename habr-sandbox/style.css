@@ -17,6 +17,20 @@ body {
   background-color: rgba(231, 231, 231, 0.669);
 }
 
+main {
+  flex: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -82,8 +96,9 @@ button {
 }
 .icon-dropdown {
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
+  fill: #fff;
 }
 
 .header-author-btn {
@@ -177,4 +192,34 @@ button {
 
 .sticky-header-login-btn:hover {
   background-color: #39728e;
+}
+
+/* main */
+.main-container {
+  display: flex;
+  gap: 20px;
+}
+
+.main-container-inner {
+  max-width: 780px;
+  margin-top: 12px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.aside {
+  width: 300px;
+  margin-top: 24px;
+  padding: 24px 20px;
+  background-color: #fff;
+}
+
+.my-feed-setting-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-my-feed-settings {
+  fill: black;
 }
