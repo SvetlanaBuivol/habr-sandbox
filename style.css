@@ -61,6 +61,11 @@ button {
   cursor: pointer;
 }
 
+.rotated {
+  transform: rotate(180deg);
+  transition: transform 300ms ease-in;
+}
+
 /* header */
 .header {
   width: 100%;
@@ -332,4 +337,34 @@ color: #bbcdd6;
     color: rgb(73, 173, 223);
 }
 
+/* dropdown header nav */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 108px;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content-item {
+  padding: 12px 24px;
+
+  transition: background-color 250ms ease;
+}
+.dropdown-content-item:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-title {
+  margin-bottom: 4px;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.dropdown-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(144, 144, 144);
+}
        
