@@ -318,6 +318,69 @@
       </section>
     </footer>
 
+    <!-- modal -->
+    <div id="settingsModal" class="settings-modal">
+      <div class="settings-modal-content">
+        <button type="button" class="setting-modal-close-btn">
+          <svg class="icon-close" width="24" height="24">
+            <use xlink:href="./assets/svg/svg-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <h1 class="settings-modal-title">Настройки страницы</h1>
+
+        <form>
+          <fieldset class="setting-modal-fieldset">
+            <legend>Интерфейс</legend>
+            <div class="settings-modal-labelset">
+              <label>
+                <input type="radio" name="language" value="russian" />Русский
+              </label>
+              <label>
+                <input type="radio" name="language" value="english" />English
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="setting-modal-fieldset">
+            <legend>Публикации</legend>
+            <div class="settings-modal-labelset">
+              <label>
+                <input
+                  type="checkbox"
+                  name="publication"
+                  value="russian"
+                />Русский
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="publication"
+                  value="english"
+                />Английский
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="setting-modal-fieldset">
+            <legend>Вид ленты</legend>
+            <div class="settings-modal-labelset">
+              <label>
+                <input type="radio" name="feed" value="classic" />Классический
+              </label>
+              <label>
+                <input type="radio" name="feed" value="compact" />Компактный
+              </label>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="save-settings-btn"
+            >Сохранить настройки</button
+          >
+        </form>
+      </div>
+    </div>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
