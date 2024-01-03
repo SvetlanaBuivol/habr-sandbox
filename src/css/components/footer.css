@@ -1,0 +1,101 @@
+.foter-menu-section {
+  padding-top: 34px;
+  padding-bottom: 34px;
+  background-color: var(--dark-bg-color);
+}
+
+.footer-list {
+  display: flex;
+  gap: 32px;
+  color: var(--white-color);
+}
+
+.footer-item {
+  flex: 1;
+}
+
+.footer-item-text {
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.horizontal {
+  height: 1px;
+  width: 100%;
+  margin: 0 0 20px;
+  border: none;
+  background-color: var(--white-transparent-30);
+}
+
+.footer-item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-item-link {
+  font-size: 13px;
+
+  transition: var(--transition-color);
+}
+
+.footer-item-link:hover {
+  opacity: 0.6;
+  color: var(--button-color);
+}
+
+.footer-social {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: var(--black-bg-color);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-social-links {
+  display: flex;
+  gap: 14px;
+}
+
+.footer-social-links li {
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.icon-youtube {
+  transform: scale(1.3);
+}
+
+.icon-twitter {
+  transform: scale(1.2);
+}
+
+.footer-years {
+  font-size: 14px;
+  color: var(--icon-light-blue-fill);
+}
+
+.footer-tech {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--link-blue-color);
+
+  transition: var(--transition-color);
+}
+
+.footer-tech:hover {
+  color: var(--button-color);
+}
+
+.footer-lang-btn {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--link-blue-color);
+}

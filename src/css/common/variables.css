@@ -1,0 +1,30 @@
+:root {
+  --white-color: #fff;
+  --main-text-color: #333;
+  --secondary-text-color: #909090;
+
+  --body-bg-color: rgba(231, 231, 231, 0.669);
+  --dark-bg-color: #303b44;
+  --black-bg-color: #1f2225;
+  --light-bg-color: #f0f0f0;
+  --light-blue-bg-color:#6f7577;
+  --white-blue-bg-color: #eff6fa;
+  --white-transparent-30: rgba(255, 255, 255, 0.3);
+  --box-shadow-color: rgba(0, 0, 0, 0.2);
+  --backdrop-color: rgba(0, 0, 0, 0.5);
+
+  --header-link-pink: #ff99f7;
+  --header-border-30: rgba(146, 156, 165, 0.3);
+  --header-icon-fill: #929ca5;
+
+  --button-color: #548eaa;
+  --button-hover-blue: #39728e;
+  --link-blue-color: #49addf;
+  --icon-light-blue-fill: #bbcdd6;
+
+  --transition-border: border 250ms ease-in;
+  --transition-color: color 300ms ease-in;
+  --transition-fill: fill 300ms ease-in;
+  --transition-bg-color: background-color 200ms ease-in;
+  --transition-transform: transform 300ms ease-in;
+}

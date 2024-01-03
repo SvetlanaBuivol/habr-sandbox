@@ -1,0 +1,30 @@
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 108px;
+  width: 300px;
+  background-color: var(--white-color);
+  box-shadow: 0 8px 16px var(--box-shadow-color);
+}
+
+.dropdown-content-item {
+  padding: 12px 24px;
+
+  transition: background-color 250ms ease;
+}
+
+.dropdown-content-item:hover {
+  background-color: var(--light-bg-color);
+}
+
+.dropdown-title {
+  margin-bottom: 4px;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.dropdown-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+}

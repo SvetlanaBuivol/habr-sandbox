@@ -1,0 +1,69 @@
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: var(--white-color);
+  border-bottom: 1px solid var(--header-border-30);
+}
+
+.sticky-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sticky-header-list {
+  display: flex;
+  gap: 20px;
+}
+
+.sticky-header-item {
+  padding: 20px 0;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--secondary-text-color);
+
+  transition: var(--transition-color);
+}
+
+.sticky-header-item:hover {
+  color: var(--button-hover-blue);
+}
+
+.sticky-header-menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon-search {
+  fill: var(--header-icon-fill);
+  transition: var(--transition-fill);
+}
+
+.icon-search:hover {
+  fill: var(--button-hover-blue);
+}
+
+.icon-settings {
+  fill: var(--header-icon-fill);
+  transition: var(--transition-fill);
+}
+
+.icon-settings:hover {
+  fill: var(--button-hover-blue);
+}
+
+.sticky-header-login-btn {
+  display: flex;
+  padding: 8px 14px;
+  border-radius: 3px;
+  background-color: var(--button-color);
+  color: var(--white-color);
+  font-size: 13px;
+
+  transition: var(--transition-bg-color);
+}
+
+.sticky-header-login-btn:hover {
+  background-color: var(--button-hover-blue);
+}
