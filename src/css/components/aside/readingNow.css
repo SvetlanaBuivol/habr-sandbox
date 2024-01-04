@@ -1,0 +1,65 @@
+.aside-reading-now-list {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0 0;
+}
+
+.aside-reading-now-item:not(:first-child) {
+  padding-top: 18px;
+}
+
+.aside-reading-now-item:not(:last-child) {
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--header-border-30);
+}
+
+.aside-reading-now-link {
+  display: block;
+  margin-bottom: 12px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+
+  transition: var(--transition-color);
+}
+
+.aside-reading-now-link:hover {
+  color: var(--button-color);
+}
+
+.aside-reading-now-info {
+  display: flex;
+  align-items: center;
+}
+
+.aside-reading-now-comments-link {
+  display: flex;
+  margin-left: 24px;
+}
+
+.aside-reading-now-info svg {
+  fill: var(--icon-light-blue-fill);
+  cursor: default;
+}
+
+.aside-reading-now-info p {
+  margin-left: 4px;
+  font-weight: 700;
+  color: var(--header-icon-fill);
+}
+
+.aside-reading-now-info p:last-child {
+  color: var(--green-text-color);
+}
+
+.aside-reading-now-label {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid var(--purple-border-color);
+  border-radius: 3px;
+  color: var(--purple-text-color);
+  font-size: 12px;
+  line-height: 1.3;
+}

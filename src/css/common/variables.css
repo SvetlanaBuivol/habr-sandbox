@@ -1,7 +1,10 @@
 :root {
   --white-color: #fff;
-  --main-text-color: #333;
+  --main-text-color: #333333;
   --secondary-text-color: #909090;
+  --pink-text-color: #c23d96;
+  --green-text-color: #7aa600;
+  --purple-text-color: #6667a3;
 
   --body-bg-color: rgba(231, 231, 231, 0.669);
   --dark-bg-color: #303b44;
@@ -21,6 +24,7 @@
   --button-hover-blue: #39728e;
   --link-blue-color: #49addf;
   --icon-light-blue-fill: #bbcdd6;
+  --purple-border-color: rgba(102, 103, 163, 0.5);
 
   --transition-border: border 250ms ease-in;
   --transition-color: color 300ms ease-in;

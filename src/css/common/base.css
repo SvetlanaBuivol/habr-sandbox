@@ -2,6 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Noto Sans', sans-serif;
+  font-size: 13px;
   margin: 0;
   min-height: 100vh;
   color: var(--main-text-color);
@@ -23,6 +24,19 @@ footer {
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  height: 1px;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  width: 1px;
+  overflow: hidden;
+}
+
 svg {
   cursor: pointer;
 }
@@ -42,12 +56,5 @@ svg {
 .main-container-inner {
   margin-top: 12px;
   padding: 20px;
-  background-color: var(--white-color);
-}
-
-.aside {
-  width: 300px;
-  margin-top: 24px;
-  padding: 24px 20px;
   background-color: var(--white-color);
 }

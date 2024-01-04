@@ -1,0 +1,26 @@
+.aside-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.aside {
+  align-self: flex-start;
+  width: 300px;
+  height: auto;
+  padding: 16px 20px;
+  background-color: var(--white-color);
+}
+
+.aside-title {
+  border-bottom: 1px solid var(--header-border-30);
+  color: var(--light-blue-bg-color);
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+}
