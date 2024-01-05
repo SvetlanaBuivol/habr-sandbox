@@ -1,0 +1,29 @@
+.my-feed-menu {
+  display: none;
+  opacity: 0;
+  width: 100%;
+  height: 350px;
+  padding: 16px 20px 20px;
+  background-color: var(--my-feedmenu-bg-color);
+  overflow: hidden;
+
+  transform: translateY(-100%);
+}
+
+.my-feed-menu.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInOut 0.4s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

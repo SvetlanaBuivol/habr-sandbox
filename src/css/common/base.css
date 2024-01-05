@@ -10,7 +10,7 @@ body {
 }
 
 main {
-  flex: 1;
+  flex-grow: 1;
 }
 
 footer {
@@ -44,17 +44,4 @@ svg {
 .rotated {
   transform: rotate(180deg);
   transition: var(--transition-transform);
-}
-
-.main-container {
-  flex-grow: 1;
-  display: flex;
-  gap: 20px;
-  width: 100%;
-}
-
-.main-container-inner {
-  margin-top: 12px;
-  padding: 20px;
-  background-color: var(--white-color);
 }

@@ -1,0 +1,38 @@
+.my-feed-wrapper {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.my-feed-section {
+  flex: 1;
+  height: auto;
+  margin-top: 12px;
+  overflow: hidden;
+}
+
+.my-feed-container {
+  padding: 16px 20px;
+  background-color: var(--white-color);
+}
+
+.my-feed-settings {
+  position: relative;
+  z-index: 100;
+}
+
+.my-feed-title {
+  margin-bottom: 26px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.my-feed-setting-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-my-feed-settings {
+  fill: var(--main-text-color);
+}

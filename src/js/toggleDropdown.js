@@ -1,10 +1,10 @@
-function toggleDropdown() {
-    var dropdownContent = document.getElementById('dropdown-content');
-    dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+const dropdownBtn = document.querySelector('.header-dropdown-button');
 
-    var dropdownBtn = document.querySelector('.header-dropdown-button');
+function toggleDropdown() {
+    const dropdownContent = document.getElementById('dropdown-content');
+    dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
 
     dropdownBtn.classList.toggle('rotated')
 }
 
-document.querySelector('.header-dropdown-button').addEventListener('click', toggleDropdown)
+dropdownBtn.addEventListener('click', toggleDropdown)

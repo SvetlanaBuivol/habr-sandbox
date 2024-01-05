@@ -4,9 +4,10 @@
 @import './src/css/components/header/header.css';
 @import './src/css/components/header/stickyHeader.css';
 @import './src/css/components/headerDropdown.css';
-@import './src/css/components/settingsModal.css';
 @import './src/css/components/aside/commonAside.css';
 @import './src/css/components/aside/bestBlogs.css';
 @import './src/css/components/aside/readingNow.css';
-@import './src/css/components/myFeed.css';
+@import './src/css/components/myFeed/myFeed.css';
+@import './src/css/components/myFeed/myFeedMenu.css';
 @import './src/css/components/footer.css';
+@import './src/css/components/settingsModal.css';
