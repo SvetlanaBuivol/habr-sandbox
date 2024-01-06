@@ -45,3 +45,17 @@ svg {
   transform: rotate(180deg);
   transition: var(--transition-transform);
 }
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+legend {
+  padding: 0;
+}
+
+label {
+  cursor: pointer;
+}

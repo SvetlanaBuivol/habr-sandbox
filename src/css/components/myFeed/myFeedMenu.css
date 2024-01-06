@@ -1,8 +1,18 @@
+@keyframes fadeInOut {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .my-feed-menu {
   display: none;
   opacity: 0;
   width: 100%;
-  height: 350px;
   padding: 16px 20px 20px;
   background-color: var(--my-feedmenu-bg-color);
   overflow: hidden;
@@ -17,13 +27,116 @@
   animation: fadeInOut 0.4s ease-in-out forwards;
 }
 
-@keyframes fadeInOut {
-  from {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.my-feed-menu-fieldset {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 18px;
+}
+
+.my-feed-menu-fieldset label {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+  font-size: 14px;
+}
+
+.my-feed-menu-title {
+  margin-left: 0;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.my-feed-checkbox-button {
+  position: relative;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  border: 1px solid var(--header-border-30);
+}
+
+.my-feed-checkbox-button::before {
+  content: '\2714';
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  color: var(--white-color);
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 12px;
+}
+
+.my-feed-menu-fieldset
+  input[type='checkbox']:checked
+  + .my-feed-checkbox-button::before {
+  display: block;
+}
+
+.my-feed-menu-fieldset
+  input[type='checkbox']:checked
+  + .my-feed-checkbox-button {
+  background-color: var(--button-color);
+}
+
+.my-feed-menu-fieldset.radio {
+  gap: 8px;
+}
+
+.my-feed-menu-fieldset.radio span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 10px;
+  border: 1px solid var(--button-color);
+  border-radius: 3px;
+  font-size: 12px;
+  color: var(--button-color);
+
+  transition: var(--transition-bg-color);
+}
+
+.my-feed-menu-fieldset.radio input:checked + span,
+.my-feed-menu-fieldset.radio span:hover {
+  color: var(--white-color);
+  background-color: var(--button-color);
+}
+
+.my-feed-menu-banner {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 12px 18px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  line-height: 1.3;
+  border-radius: 3px;
+  border: 1px solid var(--warning-color);
+  background-color: var(--warning-bg-color);
+}
+
+.my-feed-menu-banner a {
+  color: var(--button-color);
+}
+
+.my-feed-menu-banner .icon-danger {
+  fill: var(--warning-color);
+}
+
+.my-feed-menu-button {
+  min-width: 104px;
+  min-height: 32px;
+  padding: 8px 14px;
+  border-radius: 3px;
+  background-color: var(--green-text-color);
+  color: var(--white-color);
+}
+
+.my-feed-menu-button:disabled {
+  background-color: silver;
+  cursor: not-allowed;
 }

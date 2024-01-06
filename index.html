@@ -130,7 +130,157 @@
               </svg>
             </button>
           </div>
-          <div class="my-feed-menu"> menu </div>
+
+          <div class="my-feed-menu">
+            <form>
+              <fieldset class="my-feed-menu-fieldset">
+                <legend class="my-feed-menu-title">Тип публикации</legend>
+                <label>
+                  <input
+                    class="visually-hidden"
+                    type="checkbox"
+                    name="publication-type"
+                    value="articles"
+                    checked
+                  />
+                  <span class="my-feed-checkbox-button"></span>
+                  Статьи
+                </label>
+                <label>
+                  <input
+                    class="visually-hidden"
+                    type="checkbox"
+                    name="publication-type"
+                    value="posts"
+                    checked
+                  />
+                  <span class="my-feed-checkbox-button"></span>
+                  Посты
+                </label>
+                <label>
+                  <input
+                    class="visually-hidden"
+                    type="checkbox"
+                    name="publication-type"
+                    value="news"
+                    checked
+                  />
+                  <span class="my-feed-checkbox-button"></span>
+                  Новости
+                </label>
+              </fieldset>
+              <fieldset class="my-feed-menu-fieldset radio">
+                <legend class="my-feed-menu-title">Порог рейтинга</legend>
+                <label>
+                  <input
+                    class="visually-hidden"
+                    type="radio"
+                    name="rating"
+                    value="all"
+                    checked
+                  />
+                  <span class="my-feed-menu-span">Все</span>
+                </label>
+                <label>
+                  <input
+                    class="visually-hidden"
+                    type="radio"
+                    name="rating"
+                    value="null"
+                  />
+                  <span class="my-feed-menu-span">≥0</span>
+                </label>
+                <label>
+                  <input
+                    class="visually-hidden"
+                    type="radio"
+                    name="rating"
+                    value="ten"
+                  />
+                  <span class="my-feed-menu-span">≥10</span>
+                </label>
+                <label>
+                  <input
+                    class="visually-hidden"
+                    type="radio"
+                    name="rating"
+                    value="twenty-five"
+                  />
+                  <span class="my-feed-menu-span">≥25</span>
+                </label>
+                <label>
+                  <input
+                    class="visually-hidden"
+                    type="radio"
+                    name="rating"
+                    value="fifty"
+                  />
+                  <span class="my-feed-menu-span">≥50</span>
+                </label>
+                <label>
+                  <input
+                    class="visually-hidden"
+                    type="radio"
+                    name="rating"
+                    value="hundred"
+                  />
+                  <span class="my-feed-menu-span">≥100</span>
+                </label>
+              </fieldset>
+              <fieldset class="my-feed-menu-fieldset radio">
+                <legend class="my-feed-menu-title">Уровень сложности</legend>
+                <label>
+                  <input
+                    class="visually-hidden"
+                    type="radio"
+                    name="difficulty-level"
+                    value="all"
+                    checked
+                  />
+                  <span class="my-feed-menu-span">Все</span>
+                </label>
+                <label>
+                  <input
+                    class="visually-hidden"
+                    type="radio"
+                    name="difficulty-level"
+                    value="easy"
+                  />
+                  <span class="my-feed-menu-span">Простой</span>
+                </label>
+                <label>
+                  <input
+                    class="visually-hidden"
+                    type="radio"
+                    name="difficulty-level"
+                    value="medium"
+                  />
+                  <span class="my-feed-menu-span">Средний</span>
+                </label>
+                <label>
+                  <input
+                    class="visually-hidden"
+                    type="radio"
+                    name="difficulty-level"
+                    value="hard"
+                  />
+                  <span class="my-feed-menu-span">Сложный</span>
+                </label>
+              </fieldset>
+              <div class="my-feed-menu-banner">
+                <svg class="icon-danger" width="24" height="24">
+                  <use xlink:href="./assets/svg/svg-defs.svg#icon-danger"></use>
+                </svg>
+                <p>
+                  <a href="№">Войдите</a> или <a href="№">зарегистрируйтесь</a>,
+                  чтобы настроить фильтры
+                </p>
+              </div>
+              <button disabled type="submit" class="my-feed-menu-button"
+                >Применить</button
+              >
+            </form>
+          </div>
         </section>
 
         <div class="aside-wrapper">

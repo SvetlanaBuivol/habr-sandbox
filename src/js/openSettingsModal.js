@@ -7,6 +7,9 @@ const closeModalButtonEl = document.querySelector(
   '.setting-modal-close-button'
 );
 
+headerOpenModalButtonEl.addEventListener('click', openModal);
+footerOpenModalButtonEl.addEventListener('click', openModal);
+
 function openModal() {
   modalEl.style.display = 'block';
   closeModalButtonEl.addEventListener('click', closeModal);
@@ -19,10 +22,8 @@ function closeModal() {
   window.removeEventListener('click', windowClick);
 }
 
-function windowClick(e) {
-  if (e.target === modalEl) {
+function windowClick(event) {
+  if (event.target === modalEl) {
     closeModal();
   }
 }
-headerOpenModalButtonEl.addEventListener('click', openModal);
-footerOpenModalButtonEl.addEventListener('click', openModal);

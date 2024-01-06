@@ -1,10 +1,25 @@
-const dropdownBtn = document.querySelector('.header-dropdown-button');
+const dropdownBtnEl = document.querySelector('.header-dropdown-button');
+const dropdownContentEl = document.querySelector('.dropdown-content');
+
+dropdownBtnEl.addEventListener('click', toggleDropdown);
 
 function toggleDropdown() {
-    const dropdownContent = document.getElementById('dropdown-content');
-    dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+  dropdownContentEl.style.display =
+    dropdownContentEl.style.display === 'block' ? 'none' : 'block';
+  dropdownBtnEl.classList.toggle('rotated');
 
-    dropdownBtn.classList.toggle('rotated')
+  dropdownContentEl.style.display === 'block'
+    ? document.addEventListener('click', closeDropdownOutside)
+    : document.removeEventListener('click', closeDropdownOutside);
 }
 
-dropdownBtn.addEventListener('click', toggleDropdown)
+function closeDropdownOutside(event) {
+  if (
+    !dropdownBtnEl.contains(event.target) &&
+    !dropdownContentEl.contains(event.target)
+  ) {
+    dropdownContentEl.style.display = 'none';
+    dropdownBtnEl.classList.remove('rotated');
+    document.removeEventListener('click', closeDropdownOutside);
+  }
+}
