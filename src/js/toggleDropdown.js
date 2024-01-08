@@ -4,13 +4,16 @@ const dropdownContentEl = document.querySelector('.dropdown-content');
 dropdownBtnEl.addEventListener('click', onToggleDropdown);
 
 function onToggleDropdown() {
-  dropdownContentEl.style.display =
-    dropdownContentEl.style.display === 'block' ? 'none' : 'block';
-  dropdownBtnEl.classList.toggle('rotated');
+  const isDropdownVisible = dropdownContentEl.classList.toggle('show-dropdown');
 
-  dropdownContentEl.style.display === 'block'
-    ? document.addEventListener('click', onCloseDropdownOutside)
-    : document.removeEventListener('click', onCloseDropdownOutside);
+  dropdownBtnEl.classList.toggle('rotated', isDropdownVisible);
+
+  if (isDropdownVisible) {
+    window.addEventListener('click', onCloseDropdownOutside);
+    window.addEventListener('keydown', onEscapeKeydown);
+  } else {
+    removeEventListeners();
+  }
 }
 
 function onCloseDropdownOutside(event) {
@@ -18,8 +21,23 @@ function onCloseDropdownOutside(event) {
     !dropdownBtnEl.contains(event.target) &&
     !dropdownContentEl.contains(event.target)
   ) {
-    dropdownContentEl.style.display = 'none';
-    dropdownBtnEl.classList.remove('rotated');
-    document.removeEventListener('click', onCloseDropdownOutside);
+    closeDropdown();
   }
+}
+
+function closeDropdown() {
+  dropdownContentEl.classList.remove('show-dropdown');
+  dropdownBtnEl.classList.remove('rotated');
+  removeEventListeners();
+}
+
+function onEscapeKeydown(event) {
+  if (event.code === 'Escape') {
+    closeDropdown();
+  }
+}
+
+function removeEventListeners() {
+  window.removeEventListener('click', onCloseDropdownOutside);
+  window.removeEventListener('keydown', onEscapeKeydown);
 }

@@ -8,6 +8,10 @@
   z-index: 200;
 }
 
+.dropdown-content.show-dropdown {
+  display: block;
+}
+
 .dropdown-content-item {
   padding: 12px 24px;
 
