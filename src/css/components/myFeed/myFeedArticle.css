@@ -1,0 +1,118 @@
+.article-type {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--article-text-color);
+}
+
+.article-author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.article-author-name {
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+.article-datetime {
+  margin-left: 4px;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+}
+
+.article-title {
+  font-family: 'Fira Sans';
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: var(--main-text-color);
+
+  transition: var(--transition-color);
+}
+
+.article-title:hover {
+  color: var(--button-color);
+}
+
+.article-stats {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.article-stats div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.article-stats div svg {
+  fill: var(--icon-light-blue-fill);
+}
+
+.article-stats div p {
+  font-weight: 700;
+  line-height: 1.8;
+  color: var(--header-icon-fill);
+}
+
+.article-hub-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  line-height: 1.8;
+  color: var(--light-blue-bg-color);
+}
+
+.article-img {
+  margin-bottom: 20px;
+}
+
+.article-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 36px;
+}
+
+.article-read-more-button {
+  min-height: 36px;
+  padding: 0 13px;
+  margin-bottom: 24px;
+  border-radius: 3px;
+  background-color: transparent;
+  border: 1px solid var(--button-color);
+  color: var(--button-color);
+  line-height: 2;
+
+  transition: var(--transition-color), var(--transition-bg-color);
+}
+
+.article-read-more-button:hover {
+  background-color: var(--button-color);
+  color: var(--white-color);
+}
+
+.article-action-icons {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-weight: 700;
+  color: var(--header-icon-fill);
+  line-height: 1;
+}
+
+.article-action-icons div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.article-action-icons div svg {
+  fill: var(--icon-light-blue-fill);
+}

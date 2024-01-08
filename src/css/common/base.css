@@ -59,3 +59,11 @@ legend {
 label {
   cursor: pointer;
 }
+
+.article {
+  margin-top: 12px;
+}
+
+.positive-value {
+  color: var(--green-text-color);
+}

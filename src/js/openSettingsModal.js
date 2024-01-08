@@ -7,23 +7,29 @@ const closeModalButtonEl = document.querySelector(
   '.setting-modal-close-button'
 );
 
-headerOpenModalButtonEl.addEventListener('click', openModal);
-footerOpenModalButtonEl.addEventListener('click', openModal);
+headerOpenModalButtonEl.addEventListener('click', onOpenModal);
+footerOpenModalButtonEl.addEventListener('click', onOpenModal);
 
-function openModal() {
+function onOpenModal() {
   modalEl.style.display = 'block';
-  closeModalButtonEl.addEventListener('click', closeModal);
-  window.addEventListener('click', windowClick);
+  window.addEventListener('keydown', onEscClick);
+  closeModalButtonEl.addEventListener('click', onCloseModal);
+  modalEl.addEventListener('click', onBackdropClick);
 }
 
-function closeModal() {
+function onCloseModal() {
   modalEl.style.display = 'none';
-  closeModalButtonEl.removeEventListener('click', closeModal);
-  window.removeEventListener('click', windowClick);
+  window.removeEventListener('keydown', onEscClick);
 }
 
-function windowClick(event) {
-  if (event.target === modalEl) {
-    closeModal();
+function onBackdropClick(event) {
+  if (event.target === event.currentTarget) {
+    onCloseModal();
+  }
+}
+
+function onEscClick(event) {
+  if (event.code === 'Escape') {
+    onCloseModal();
   }
 }
