@@ -9,6 +9,9 @@
 @import './src/css/components/aside/readingNow.css';
 @import './src/css/components/myFeed/myFeed.css';
 @import './src/css/components/myFeed/myFeedMenu.css';
-@import './src//css/components/myFeed/myFeedArticle.css';
+@import './src/css/components/myFeed/myFeedArticle.css';
+@import './src/css//components/myFeed/myFeedNews.css';
+@import './src/css/components/myFeed/myFeedAttentionMinute.css';
+@import './src/css/components/pagination.css';
 @import './src/css/components/footer.css';
 @import './src/css/components/settingsModal.css';

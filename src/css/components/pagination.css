@@ -1,0 +1,10 @@
+.pagination {
+    margin-top: 12px;
+    margin-bottom: 60px;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white-color);
+}
